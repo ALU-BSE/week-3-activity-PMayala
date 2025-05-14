@@ -1,0 +1,28 @@
+### Part 2: Making Your First API Request
+
+# Get basic profile info of GitHub user "octocat"
+GET https://api.github.com/users/octocat
+
+###
+
+### Part 3: Exploring Different Endpoints
+
+# 1. List repositories of a user
+GET https://api.github.com/users/octocat/repos
+
+###
+
+# 2. Get a specific repository (e.g., octocat/Hello-World)
+GET https://api.github.com/repos/octocat/Hello-World
+Accept: application/vnd.github.v3+json
+
+###
+
+### Part 4: Understanding Authentication (Optional)
+
+# 3. Get repositories of the authenticated user
+# Replace YOUR_TOKEN with your GitHub Personal Access Token
+GET https://api.github.com/user/repos
+Authorization: Bearer YOUR_TOKEN
+
+###
